@@ -1,0 +1,9 @@
+00:12:25 **** Incremental Build of configuration Debug for project PointerProblem ****
+Info: Internal Builder is used for build
+g++ -o PointerProblem.exe "src\\PointerProblem.o" 
+src\PointerProblem.o: In function `main':
+C:\Users\Mathy\Documents\UDEMY\LEARN C++ PROGRAMMING BY MAKING GAMES PT.1\workspace\PointerProblem\Debug/../src/PointerProblem.cpp:21: undefined reference to `Swap(int&, int&)'
+collect2.exe: error: ld returned 1 exit status
+
+00:12:25 Build Failed. 1 errors, 0 warnings. (took 232ms)
+

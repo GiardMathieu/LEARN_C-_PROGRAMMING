@@ -1,0 +1,43 @@
+Problem 1: Write an algorithm that gets a number from the user from 1 to 7 and prints the corresponding day of the week. We start the week with monday
+
+1. Get the number from the user
+2. switch 
+	case 1:
+		"Monday"
+		break;
+	case 2:
+		"Tuesday"
+		break;
+	case 3:
+		"Wednesday"
+		break;
+	case 4:
+		"Thursday"
+		breakl
+	case 5:
+		"Friday"
+		break;
+	case 6:
+		"Saturday"
+		break
+	case 7:
+		"Sunday"
+		break;
+	else:
+		"That is not a day of the week!"
+		break;	
+	
+
+
+Problem 2: Write an algorithm that sums all the odd numbers from 1 to N. Where N is a number from the user. Output the result
+
+
+1. Get the number from user and store it in N variable and create sum = 0
+2. loop using idx <= N and use !(idx % 2 == 2) to add it to the sum (sum +=idx)
+3. Output the result (sum)
+
+Problem 3 : Write an algorithm that takes in 2 numbers from the user. The first number will be the base and the second will be the exponent. Calculate the result of the base number to the power of the exponent and output the result
+
+1. Get result for the e variable (exponent) and the b for the base variable
+2. Calculate b ^ e using a loop idx < 5;
+3. Output the result to the user in the console

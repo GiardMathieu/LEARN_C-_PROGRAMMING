@@ -1,0 +1,187 @@
+01:31:16 **** Rebuild of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+..\src\TicTacToe.cpp: In function 'void inputIdxValue(char*, int, char, int)':
+..\src\TicTacToe.cpp:150:6: warning: unused variable 'idx' [-Wunused-variable]
+  int idx;
+      ^~~
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+Info: Nothing to build for TicTacToe
+01:44:21 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+..\src\TicTacToe.cpp: In function 'char* newArray(int)':
+..\src\TicTacToe.cpp:193:71: error: invalid conversion from 'char' to 'char*' [-fpermissive]
+  char * grid[arrayLength] = {'-', '-', '-','-', '-', '-','-', '-', '-'};
+                                                                       ^
+..\src\TicTacToe.cpp:193:71: error: invalid conversion from 'char' to 'char*' [-fpermissive]
+..\src\TicTacToe.cpp:193:71: error: invalid conversion from 'char' to 'char*' [-fpermissive]
+..\src\TicTacToe.cpp:193:71: error: invalid conversion from 'char' to 'char*' [-fpermissive]
+..\src\TicTacToe.cpp:193:71: error: invalid conversion from 'char' to 'char*' [-fpermissive]
+..\src\TicTacToe.cpp:193:71: error: invalid conversion from 'char' to 'char*' [-fpermissive]
+..\src\TicTacToe.cpp:193:71: error: invalid conversion from 'char' to 'char*' [-fpermissive]
+..\src\TicTacToe.cpp:193:71: error: invalid conversion from 'char' to 'char*' [-fpermissive]
+..\src\TicTacToe.cpp:193:71: error: invalid conversion from 'char' to 'char*' [-fpermissive]
+..\src\TicTacToe.cpp:193:9: warning: unused variable 'grid' [-Wunused-variable]
+  char * grid[arrayLength] = {'-', '-', '-','-', '-', '-','-', '-', '-'};
+         ^~~~
+..\src\TicTacToe.cpp:194:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+01:46:18 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+01:48:06 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+01:49:38 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+01:50:50 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+01:51:03 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+Info: Nothing to build for TicTacToe
+01:52:06 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+01:53:56 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+01:55:49 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+01:56:24 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+01:57:26 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+01:58:35 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+Info: Nothing to build for TicTacToe
+15:15:07 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+15:15:39 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+15:17:27 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+15:21:15 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+..\src\TicTacToe.cpp: In function 'void PlayGame()':
+..\src\TicTacToe.cpp:61:25: error: cannot convert 'char*' to 'char**' for argument '1' to 'void DrawGrid(char**)'
+   DrawGrid(optrGridBoard);
+                         ^
+15:21:54 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+..\src\TicTacToe.cpp: In function 'void PlayGame()':
+..\src\TicTacToe.cpp:61:25: error: cannot convert 'char*' to 'char**' for argument '1' to 'void DrawGrid(char**)'
+   DrawGrid(optrGridBoard);
+                         ^
+..\src\TicTacToe.cpp: In function 'void inputIdxValue(char**, int, char, int)':
+..\src\TicTacToe.cpp:168:32: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+     if (noptrGridBoard[idx] == '-') {
+                                ^~~
+..\src\TicTacToe.cpp:170:29: error: invalid conversion from 'char' to 'char*' [-fpermissive]
+       noptrGridBoard[idx] = 'O';
+                             ^~~
+..\src\TicTacToe.cpp:173:29: error: invalid conversion from 'char' to 'char*' [-fpermissive]
+       noptrGridBoard[idx] = 'X';
+                             ^~~
+..\src\TicTacToe.cpp: In function 'char* newArray(int)':
+..\src\TicTacToe.cpp:196:18: error: initializer fails to determine size of 'grid'
+  char * grid[] = newArray;
+                  ^~~~~~~~
+..\src\TicTacToe.cpp:196:18: error: array must be initialized with a brace-enclosed initializer
+..\src\TicTacToe.cpp:198:9: error: cannot convert 'char**' to 'char*' in return
+  return grid;
+         ^~~~
+15:22:22 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+..\src\TicTacToe.cpp: In function 'void PlayGame()':
+..\src\TicTacToe.cpp:61:25: error: cannot convert 'char*' to 'char**' for argument '1' to 'void DrawGrid(char**)'
+   DrawGrid(optrGridBoard);
+                         ^
+..\src\TicTacToe.cpp: In function 'void inputIdxValue(char**, int, char, int)':
+..\src\TicTacToe.cpp:168:32: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+     if (noptrGridBoard[idx] == '-') {
+                                ^~~
+..\src\TicTacToe.cpp:170:29: error: invalid conversion from 'char' to 'char*' [-fpermissive]
+       noptrGridBoard[idx] = 'O';
+                             ^~~
+..\src\TicTacToe.cpp:173:29: error: invalid conversion from 'char' to 'char*' [-fpermissive]
+       noptrGridBoard[idx] = 'X';
+                             ^~~
+15:23:21 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+Info: Nothing to build for TicTacToe
+15:26:44 **** Rebuild of configuration Debug for project Pointers ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pointers.o" "..\\src\\Pointers.cpp" 
+g++ -o Pointers.exe "src\\Pointers.o" 
+15:27:38 **** Incremental Build of configuration Debug for project Pointers ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pointers.o" "..\\src\\Pointers.cpp" 
+g++ -o Pointers.exe "src\\Pointers.o" 
+15:27:53 **** Incremental Build of configuration Debug for project Pointers ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pointers.o" "..\\src\\Pointers.cpp" 
+g++ -o Pointers.exe "src\\Pointers.o" 
+Info: Nothing to build for Pointers
+15:28:54 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+15:29:30 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+15:30:00 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+15:32:24 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+15:34:47 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+15:35:45 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+15:36:03 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+16:04:22 **** Incremental Build of configuration Debug for project TicTacToe ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
+g++ -o TicTacToe.exe "src\\TicTacToe.o" 

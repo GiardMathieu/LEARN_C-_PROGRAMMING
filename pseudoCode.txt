@@ -1,0 +1,50 @@
+1. Show message to the user to input a temperature in celsius
+2. Receive input from the user to get temperature
+3. Show the conversion formula
+4. Temperature conversion
+5. Show result to the user in the console 
+
+
+1. Get first value and store in variable n1 and second value and store in variable n2
+2. Condition to which is the biggest number and console output it
+3. if(n1 > n2) n1 is bigger than n2
+4. if(n1 < n2) n2 is bigger than n1 (or use else)
+
+
+Given the word Mississippi, how many "S"s are there?
+
+1. Create a nbS variable;
+2. Go through the whole string (Mississippi)
+3. For each letter that is an S, add +1 to the nbS variable
+4. Show the result in the console
+
+<-----------------------------	 PseudoCode	----------------------------->
+	
+Get 2 numbers from the user, one is the length of the base of the triangle. The other is the height of the triangle. Calculate the area of the triangle and output it
+
+1. B = User input for the base of the triangle
+2. H = User input for the height of the trangle
+3. A = (B * H) / 2
+4. Output in the console the area of the console
+
+
+Given 3 side lengths of a triangle (A,B,C), output whether the triangle is equilateral (all the sides are the same), Isosceles (2 sides are the same) or scalene (none are the same).
+
+1. A = User input for the first side of the triangle
+2. B = User input for the second side of the triangle
+3. C = User input for the third side of the triangle
+4. if (A === B && B === C) the triangle is equilateral
+5. else if (A === B && A !== C || A === C && A != B) the triangle is isosceles
+6. else the triangle is scalene
+
+
+Output all even numbers from 1 to 100
+
+1. for (int i = 1; i <=100; i++) write in console numbers that are (nb % 2 == 0)
+
+
+Get a number from the user. Output the sum of al the numbers from 1 up to and including the inputted number;
+1. Create sum variable;
+2. Get nb from user and store in variable
+3. for(int i = 1; i<= nb; i++) sum += i;
+4. Write in console the sum
