@@ -63,6 +63,7 @@ void InitializePlayer(Player& player, const char * playerName);
 void PlayGame(Player & player, Player & dealer);
 void Hit(Player & player);
 void DrawCards(Player & player);
+void DisplayResults(Player & player, Player & dealer);
 
 char GetCharacter(const char *prompt, const char* error, const char validInput[], int validInputLength);
 
@@ -83,7 +84,7 @@ Card GetCard(Player & player, Player & dealer);
 
 int main(){
 
-	srand(time(NULL));
+	srand((unsigned) time(NULL));
 
 	Player player;
 	Player dealer;
@@ -93,7 +94,11 @@ int main(){
 
 
 	PlayGame(player, dealer);
+
+	DisplayResults(player, dealer);
 	cout << "GAME END" << endl;
+
+
 	return 0;
 }
 
@@ -101,9 +106,19 @@ void Hit(Player & player, Player & dealer) {
 	player.playerHand[player.numberOfCards-1] = GetCard(player, dealer);
 }
 
+void DisplayResults(Player & player, Player & dealer) {
+	if (GetSum(player) > GetSum(dealer)) {
+		cout << "The player has won with " << GetSum(player) << " points!" << endl;
+	} else {
+		cout << "The dealer has won with " << GetSum(dealer) << " points!" << endl;
+	}
+}
+
 void DrawCards(Player & player) {
+	cout << "------------- Deck of " << player.playerName << " ------------- " << endl;
 
 	for (int i = 0; i < player.numberOfCards; i++) {
+		cout << "numberOfCards[" << i << "] = " << i << endl;
 		cout << "------    " << endl;
 		cout << "|    |    " << endl;
 		cout << "| "<< player.playerHand[i].cardValue << "  |    " << endl;
@@ -118,9 +133,11 @@ Card GetCard(Player & currentPlayer, Player & otherPlayer) {
 
 	int cardValue;
 
+
 	do {
 		cardValue = GetRandomNumber();
 	} while (!(PossibleDraw(currentPlayer, otherPlayer, cardValue)));
+	currentPlayer.numberOfCards ++;
 	newCard.cardValue = cardValue;
 	if (newCard.cardValue < 11) {
 		newCard.cardType = C_NUMBER;
@@ -131,7 +148,7 @@ Card GetCard(Player & currentPlayer, Player & otherPlayer) {
 		newCard.cardType = C_NULL;
 		newCard.cardValue = 0;
 	}
-	currentPlayer.numberOfCards ++;
+
 
 	return newCard;
 }
@@ -151,22 +168,25 @@ void PlayGame(Player & player, Player & dealer) {
 	// The player receives the first two cards of the game
 	player.playerHand[0] = GetCard(player, dealer);
 	player.playerHand[1] = GetCard(player, dealer);
-
 	DrawCards(player);
 
 	// The dealer receives the first two cards of the game
 	dealer.playerHand[0] = GetCard(dealer, player);
 	dealer.playerHand[1] = GetCard(dealer, player);
-
+	DrawCards(dealer);
 	while(DealerUnderSoftCap(dealer)) {
 		dealer.playerHand[dealer.numberOfCards-1] = GetCard(dealer, player);
+		cout << "Dealer's number of Cards: " << dealer.numberOfCards << endl;
+
 	}
+	DrawCards(dealer);
+
 	if (WantsToHit(player)) {
 		do {
 			Hit(player, dealer);
-		} while(WantsToHit(player) && IsGameOver(player, dealer));
+			DrawCards(player);
+		} while(WantsToHit(player) && !IsGameOver(player, dealer));
 	}
-	cout << "Hoe " << endl;
 }
 
 int GetSum(Player & player) {
@@ -269,5 +289,5 @@ char GetCharacter(const char *prompt, const char* error, const char validInput[]
 }
 
 int GetRandomNumber() {
-	return 1 + (rand() % 13);
+	return (rand() % 13) + 1;
 }

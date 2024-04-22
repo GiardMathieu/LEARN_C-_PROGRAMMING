@@ -12,8 +12,16 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Mathy\Documents\UDEMY\LEARN_C++_BY_MAKING_GAMES\workspace\Blackjack"/>
 			<item value="C:\Users\Mathy\Documents\UDEMY\LEARN C++ PROGRAMMING BY MAKING GAMES PT.1\workspace\Blackjack"/>
 		</list>
+		<section name="SmartImportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="376"/>
+			<item key="DIALOG_Y_ORIGIN" value="40"/>
+			<item key="DIALOG_WIDTH" value="1187"/>
+			<item key="DIALOG_HEIGHT" value="726"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
 	</section>
 	<section name="ChooseWorkspaceDialogSettings">
 		<item key="DIALOG_X_ORIGIN" value="627"/>
