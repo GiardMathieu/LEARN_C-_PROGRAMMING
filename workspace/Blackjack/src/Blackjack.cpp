@@ -102,7 +102,7 @@ void Hit(Player & player, Player & dealer) {
 }
 
 void DrawCards(Player & player) {
-	/*
+
 	for (int i = 0; i < player.numberOfCards; i++) {
 		cout << "------    " << endl;
 		cout << "|    |    " << endl;
@@ -110,9 +110,7 @@ void DrawCards(Player & player) {
 		cout << "|    |    " << endl;
 		cout << "|____|    " << endl;;
 	}
-
-	*/
-	cout << " Draw" << endl;
+	cout << "Total cards value: " << GetSum(player) << endl;
 }
 
 Card GetCard(Player & currentPlayer, Player & otherPlayer) {
@@ -195,7 +193,7 @@ bool PossibleDraw(Player & player, Player & dealer, int cardValue) {
 			copies++;
 		}
 	}
-	for (int j = 0; dealer.numberOfCards; j++) {
+	for (int j = 0; j < dealer.numberOfCards; j++) {
 		if(dealer.playerHand[j].cardValue == cardValue){
 			copies++;
 		}

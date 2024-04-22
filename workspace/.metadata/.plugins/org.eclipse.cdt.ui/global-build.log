@@ -185,3 +185,19 @@ g++ -o TicTacToe.exe "src\\TicTacToe.o"
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TicTacToe.o" "..\\src\\TicTacToe.cpp" 
 g++ -o TicTacToe.exe "src\\TicTacToe.o" 
+18:07:48 **** Rebuild of configuration Debug for project Blackjack ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Blackjack.o" "..\\src\\Blackjack.cpp" 
+g++ -o Blackjack.exe "src\\Blackjack.o" 
+Info: Nothing to build for Blackjack
+Info: Nothing to build for Blackjack
+Info: Nothing to build for Blackjack
+18:12:12 **** Incremental Build of configuration Debug for project Blackjack ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Blackjack.o" "..\\src\\Blackjack.cpp" 
+g++ -o Blackjack.exe "src\\Blackjack.o" 
+Info: Nothing to build for Blackjack
+18:55:58 **** Incremental Build of configuration Debug for project Blackjack ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Blackjack.o" "..\\src\\Blackjack.cpp" 
+g++ -o Blackjack.exe "src\\Blackjack.o" 
