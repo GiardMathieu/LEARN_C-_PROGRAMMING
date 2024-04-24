@@ -25,6 +25,7 @@ enum {
 struct Card {
 	CardType cardType;
 	int cardValue;
+	int cardPoints;
 };
 
 struct Player {
@@ -32,6 +33,7 @@ struct Player {
 	char playerName[8];
 	int numberOfCards =0;
 	Card playerHand[11];
+	int tokenCount;
 
 
 };
@@ -103,7 +105,8 @@ int main(){
 }
 
 void Hit(Player & player, Player & dealer) {
-	player.playerHand[player.numberOfCards-1] = GetCard(player, dealer);
+	Card newCard;
+	player.playerHand[player.numberOfCards-1] = newCard;
 }
 
 void DisplayResults(Player & player, Player & dealer) {
@@ -141,9 +144,10 @@ Card GetCard(Player & currentPlayer, Player & otherPlayer) {
 	newCard.cardValue = cardValue;
 	if (newCard.cardValue < 11) {
 		newCard.cardType = C_NUMBER;
-	} else if(newCard.cardValue > 11 && newCard.cardValue < 14){
+		newCard.cardPoints = newCard.cardValue;
+	} else if(newCard.cardValue >= 11 && newCard.cardValue < 14){
 		newCard.cardType = C_FACE;
-		newCard.cardValue = FACE_VALUE;
+		newCard.cardPoints = FACE_VALUE;
 	} else {
 		newCard.cardType = C_NULL;
 		newCard.cardValue = 0;
@@ -175,7 +179,9 @@ void PlayGame(Player & player, Player & dealer) {
 	dealer.playerHand[1] = GetCard(dealer, player);
 	DrawCards(dealer);
 	while(DealerUnderSoftCap(dealer)) {
-		dealer.playerHand[dealer.numberOfCards-1] = GetCard(dealer, player);
+		Card newCard;
+		newCard = GetCard(dealer, player);
+		dealer.playerHand[dealer.numberOfCards-1] = newCard;
 		cout << "Dealer's number of Cards: " << dealer.numberOfCards << endl;
 
 	}
@@ -193,7 +199,7 @@ int GetSum(Player & player) {
 	int cardValueSum = 0;
 
 	for (int i = 0; i < player.numberOfCards; i++) {
-		cardValueSum += player.playerHand[i].cardValue;
+		cardValueSum += player.playerHand[i].cardPoints;
 	}
 	return cardValueSum;
 }
@@ -239,6 +245,7 @@ bool IsGameOver(Player & player, Player & dealer) {
 	}
 	return false;
 }
+
 
 char GetCharacter(const char *prompt, const char* error, const char validInput[], int validInputLength)
 {
