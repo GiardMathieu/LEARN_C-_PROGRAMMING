@@ -14,9 +14,9 @@ int main() {
 	/*
 	ofstream outFile;
 
-	outFile.open("Test.txt");
+	outFile.open("Text.txt");
 
-	outFile << "Hello File IO " << endl;
+	outFile << "Hello File IO" << endl;
 
 	outFile.close();
 	*/
@@ -26,20 +26,26 @@ int main() {
 	inFile.open("Test.txt");
 
 	if(inFile.is_open()) {
-		inFile.seekg(0, inFile.end); //Move the cursor to the end of the file
-		int length = inFile.tellg(); // Give the position of the current character
-		inFile.seekg(0,inFile.beg); //Move the cursor to the beginning of the file
+		inFile.seekg(0, inFile.end); //Move the cursor of the file to the end of the file
+		int length = inFile.tellg(); //Give the position of the current character
+		inFile.seekg(0, inFile.beg); //Move the cursor to the start of the file
 
-		char * optrBuffer = new char[length + 1];
+		cout << length;
 
-		inFile.get(optrBuffer,length);
+		char * optrBuffer = new char[length+1];
+
+		inFile.get(optrBuffer, length);
 
 		cout << optrBuffer << endl;
 
 		delete [] optrBuffer;
 
 		inFile.close();
+
 	}
+
+
+
 
 	return 0;
 }

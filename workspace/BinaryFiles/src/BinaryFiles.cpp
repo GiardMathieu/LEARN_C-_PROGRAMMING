@@ -28,13 +28,32 @@ int main() {
 
 	Data arrayData[MAX];
 
-	for(int i = 0; i<MAX; i++) {
+	for (int i = 0; i < MAX; i++){
 		arrayData[i].value1 = rand() % VALUE1_MAX + 1;
-		arrayData[i].value2 = (rand() % (VALUE2_MAX-VALUE1_MAX)) + VALUE1_MAX + 1;
+		arrayData[i].value2 = (rand() % (VALUE2_MAX - VALUE1_MAX)) + VALUE1_MAX + 1;
 
-		cout << "arrayData[" << i << "].value1 " << arrayData[i].value1 << endl;
-		cout << "arrayData[" << i << "].value2 " << arrayData[i].value2 << endl;
+		cout << "arrayData[" << i << "].value1: " << arrayData[i].value1 << endl;
+		cout << "arrayData[" << i << "].value2: " << arrayData[i].value2 << endl;
 
+	}
+
+	ofstream outFile;
+
+	outFile.open("Data.bin", fstream::binary);
+	outFile.write((char*) &arrayData, sizeof(arrayData));
+	outFile.close();
+
+	Data newArray[MAX];
+
+	ifstream inFile;
+
+	inFile.open("Data.bin", fstream:: binary);
+	inFile.read((char*) &newArray, sizeof(newArray));
+	inFile.close();
+
+	for(int i = 0; i < MAX; i++) {
+		cout << "newArray[" << i << "].value1: " << newArray[i].value1 << endl;
+		cout << "newArray[" << i << "].value2: " << newArray[i].value2 << endl;
 	}
 
 	return 0;

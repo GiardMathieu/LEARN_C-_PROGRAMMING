@@ -298,3 +298,4 @@ char GetCharacter(const char *prompt, const char* error, const char validInput[]
 int GetRandomNumber() {
 	return (rand() % 13) + 1;
 }
+
