@@ -30,11 +30,13 @@ void RefreshScreen(){
 
 void DrawCharacter(int xPos, int yPos, char aCharacter){
 	mvaddch(yPos, xPos, aCharacter);
+
 }
 
 void DrawSprite(int xPos, int yPos, const char * sprite[], int spriteHeight, int offset){
 	for(int h = 0; h < spriteHeight; h++) {
-		mvprintw(yPos + spriteHeight, xPos, "%s", sprite[h]);
+		mvprintw(yPos + h, xPos, "%s", sprite[h + offset]);
+		mvprintw(yPos + 10, xPos + 10, "%s", offset);
 	}
 }
 
